@@ -28,7 +28,7 @@ console.log(testGreeting); // printing the output value of the function.
 */ 
 
 var bango1 = 3;
-var bango2 = 13;
+var bango2 = 5;
 
 
 /*
@@ -47,6 +47,14 @@ var bango2 = 13;
 */
 
 function add(num1, num2){
+   return num1 + num2;
+}
+
+var sum = add(bango1, bango2);
+console.log(sum);
+
+
+/*function add(num1, num2){
   return num1 + num2;
 
 }
@@ -54,7 +62,7 @@ function add(num1, num2){
 console.log(add(bango1, bango2));
 
 var sum = add(bango1, bango2);
-console.log(sum);
+console.log(sum);*/
 
 
 
@@ -73,10 +81,7 @@ console.log(sum);
  * Console.log `difference` to test your code.
 */ 
 
-function subtract(){
 
-  
-}
 
 
 
@@ -122,13 +127,13 @@ function subtract(){
  * Console.log your result.
 */
 
-function checkSum(x){
+/*function checkSum(x){
   return "Mariah Carey has been married " + x + " amount of times";
 
 }
 
 console.log(checkSum(sum));
-
+*/
 /*
  * #7
  * Function - checkDifference
@@ -277,11 +282,11 @@ console.log(addThenSubtract(bango3, bango4, bango5));*/
  * Console.log your result. 
 */
 
-function shoeSize(inches){
+/*function shoeSize(inches){
   return inches * 2.54;
 }
 
-console.log("shoeSize", shoeSize(11));
+console.log("shoeSize", shoeSize(11));*/
 
 
 /*
@@ -295,12 +300,12 @@ console.log("shoeSize", shoeSize(11));
 */
  
 
-function allCaps(str){
+/*function allCaps(str){
   return str.toUpperCase();
 
 }
 
-console.log(allCaps("snopp dogg in da house"));
+console.log(allCaps("snoop"));*/
 
 /*
  * #16
@@ -310,11 +315,11 @@ console.log(allCaps("snopp dogg in da house"));
  * Console.log your result.
 */
 
-function oneCap(str){
+/*function oneCap(str){
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-console.log(oneCap("snopp dogg in da house"));
+console.log(oneCap("snopp"));*/
 
 /*
  * #17
@@ -327,7 +332,7 @@ console.log(oneCap("snopp dogg in da house"));
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
-function verifyDrinkingAge(age){
+/*function verifyDrinkingAge(age){
   if(age >=21){
     return true;
   }else{
@@ -336,7 +341,7 @@ function verifyDrinkingAge(age){
 }
 
 var canDrink = verifyDrinkingAge(20);
-console.log(canDrink);
+console.log(canDrink);*/
 
 /**
  * #18
@@ -344,7 +349,7 @@ console.log(canDrink);
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
-function throwParty(){
+/*function throwParty(){
   if(canDrink === true){
     return "Chee Hoo!";
   }else{
@@ -353,7 +358,7 @@ function throwParty(){
 }
 var canParty = throwParty();
 console.log(canParty);
-
+*/
 
 
 
