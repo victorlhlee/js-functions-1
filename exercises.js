@@ -27,6 +27,8 @@ console.log(testGreeting); // printing the output value of the function.
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
 
+var bango1 = 3;
+var bango2 = 13;
 
 
 /*
@@ -44,6 +46,17 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
+function add(num1, num2){
+  return num1 + num2;
+
+}
+
+console.log(add(bango1, bango2));
+
+var sum = add(bango1, bango2);
+console.log(sum);
+
+
 
 
 /*
@@ -59,6 +72,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
+
+function subtract(){
+
+  
+}
 
 
 
@@ -77,7 +95,6 @@ console.log(testGreeting); // printing the output value of the function.
 */
 
 
-
 /*
  * #5
  * Function - divide
@@ -93,7 +110,6 @@ console.log(testGreeting); // printing the output value of the function.
 */
 
 
-
 /*
  * #6
  * Function - checkSum
@@ -106,7 +122,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
+function checkSum(x){
+  return "Mariah Carey has been married " + x + " amount of times";
 
+}
+
+console.log(checkSum(sum));
 
 /*
  * #7
@@ -120,6 +141,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your results.
 */ 
 
+/*function checkDifference(x){
+  return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos";
+}
+
+console.log(checkDifference(difference));
+*/
 
 
 /*
@@ -132,6 +159,13 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the sum and product.
  * Console.log your result.  
 */
+
+/*function checkProduct(){
+  return sum * product;
+}
+
+console.log(sum, product);
+console.log(checkProduct());*/
 
 
 
@@ -146,8 +180,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
+/*function checkQuotient(){
+  return product * quotient;
+}
 
-
+console.log(checkQuotient());
+*/
 /*
  * #10
  * Function - addThenSubtract
@@ -168,7 +206,17 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
+var bango3 = 2;
+var bango4 = 7;
+var bango5 = 20;
 
+/*function addThenSubtract(num1, num2, num3){
+  var add2 = add(num1, num2);
+  return subtract(add2, num3);
+
+}
+
+console.log(addThenSubtract(bango3, bango4, bango5));*/
 
 /*
  * #11
@@ -229,6 +277,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result. 
 */
 
+function shoeSize(inches){
+  return inches * 2.54;
+}
+
+console.log("shoeSize", shoeSize(11));
 
 
 /*
@@ -242,6 +295,12 @@ console.log(testGreeting); // printing the output value of the function.
 */
  
 
+function allCaps(str){
+  return str.toUpperCase();
+
+}
+
+console.log(allCaps("snopp dogg in da house"));
 
 /*
  * #16
@@ -251,7 +310,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
+function oneCap(str){
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
+console.log(oneCap("snopp dogg in da house"));
 
 /*
  * #17
@@ -264,7 +327,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+function verifyDrinkingAge(age){
+  if(age >=21){
+    return true;
+  }else{
+    return false;
+  }
+}
 
+var canDrink = verifyDrinkingAge(20);
+console.log(canDrink);
 
 /**
  * #18
@@ -272,7 +344,15 @@ console.log(testGreeting); // printing the output value of the function.
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
-
+function throwParty(){
+  if(canDrink === true){
+    return "Chee Hoo!";
+  }else{
+    return "Meh, see you at Starbucks";
+  }
+}
+var canParty = throwParty();
+console.log(canParty);
 
 
 
