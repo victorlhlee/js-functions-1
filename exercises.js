@@ -27,9 +27,8 @@ console.log(testGreeting); // printing the output value of the function.
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
 
-var bango1 = 3;
-var bango2 = 5;
-
+var bango1 = 4;
+var bango2 = 7;
 
 /*
  * #2
@@ -47,22 +46,11 @@ var bango2 = 5;
 */
 
 function add(num1, num2){
-   return num1 + num2;
+  return num1 + num2;
 }
 
 var sum = add(bango1, bango2);
 console.log(sum);
-
-
-/*function add(num1, num2){
-  return num1 + num2;
-
-}
-
-console.log(add(bango1, bango2));
-
-var sum = add(bango1, bango2);
-console.log(sum);*/
 
 
 
@@ -83,8 +71,6 @@ console.log(sum);*/
 
 
 
-
-
 /*
  * #4
  * Function - multiply
@@ -98,6 +84,7 @@ console.log(sum);*/
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
+
 
 
 /*
@@ -128,12 +115,12 @@ console.log(sum);*/
 */
 
 /*function checkSum(x){
-  return "Mariah Carey has been married " + x + " amount of times";
-
+  return "Mariah Carey has been married " + x + " amount of times.";
 }
 
-console.log(checkSum(sum));
-*/
+console.log(checkSum(sum));*/
+
+
 /*
  * #7
  * Function - checkDifference
@@ -150,8 +137,7 @@ console.log(checkSum(sum));
   return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos";
 }
 
-console.log(checkDifference(difference));
-*/
+console.log(checkDifference(difference));*/
 
 
 /*
@@ -173,7 +159,6 @@ console.log(sum, product);
 console.log(checkProduct());*/
 
 
-
 /*
  * #9
  * Function - checkQuotient
@@ -189,8 +174,10 @@ console.log(checkProduct());*/
   return product * quotient;
 }
 
-console.log(checkQuotient());
-*/
+console.log(product, quotient);
+console.log(checkQuotient());*/
+
+
 /*
  * #10
  * Function - addThenSubtract
@@ -211,16 +198,19 @@ console.log(checkQuotient());
  * Console.log your result.
 */ 
 
-var bango3 = 2;
-var bango4 = 7;
-var bango5 = 20;
+/*var bango3 = 3;
+var bango4 = 5;
+var bango5 = 7;
 
-/*function addThenSubtract(num1, num2, num3){
-  var add2 = add(num1, num2);
-  return subtract(add2, num3);
-
+function addThenSubtract(num1, num2, num3){
+  return (num1 + num2) - num3;
 }
+console.log(addThenSubtract(bango3, bango4, bango5));
 
+
+function addThenSubtract(num1, num2, num3){
+  return subtract(add(num1, num2), num3);
+}
 console.log(addThenSubtract(bango3, bango4, bango5));*/
 
 /*
@@ -237,8 +227,13 @@ console.log(addThenSubtract(bango3, bango4, bango5));*/
  * Console.log your result.
 */ 
 
+/*function multiplyThenDivide(num1, num2, num3){
+  return divide(multiply(num1, num2), num3);
 
 
+console.log(multiplyThenDivide(bango3, bango4, bango5));
+
+}*/
 /*
  * #12
  * Function - createFullName
@@ -251,7 +246,13 @@ console.log(addThenSubtract(bango3, bango4, bango5));*/
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+/*function createFullName(firstName, lastName){
+  return firstName + " " + lastName;
+}
 
+var myFullName = createFullName("Bruce", "Lee");
+console.log(myFullName);
+*/
 
 /*
  * #13 
@@ -267,6 +268,11 @@ console.log(addThenSubtract(bango3, bango4, bango5));*/
  * Console.log your result.
  */
 
+/*function eatFood(firstName, lastName, food){
+  return createFullName(firstName, lastName) + " eats " + food + " everyday for breakfast.";
+}
+
+console.log(eatFood("Biggie", "Smalls", "Won Ton Soup"));*/
 
 
 /************** ENGAGE HYPERDRIVE **************/
@@ -286,9 +292,9 @@ console.log(addThenSubtract(bango3, bango4, bango5));*/
   return inches * 2.54;
 }
 
-console.log("shoeSize", shoeSize(11));*/
+console.log(shoeSize(10));
 
-
+*/
 /*
  * #15
  * Function allCaps
@@ -299,13 +305,19 @@ console.log("shoeSize", shoeSize(11));*/
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+/*function allCaps(str){
+  return str.toUpperCase();
+}
+
+console.log(allCaps("hello"));
+console.log(allCaps("aloha"));
+*/
 
 /*function allCaps(str){
   return str.toUpperCase();
-
 }
+console.log(allCaps("snoop dogg"));*/
 
-console.log(allCaps("snoop"));*/
 
 /*
  * #16
@@ -316,10 +328,17 @@ console.log(allCaps("snoop"));*/
 */
 
 /*function oneCap(str){
+  return str[0].toUpperCase() + str.slice(1);
+}
+console.log(oneCap("i am here!"));
+
+*/
+/*function oneCap(str){
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-console.log(oneCap("snopp"));*/
+console.log(oneCap("snoop dogg"));*/
+
 
 /*
  * #17
@@ -333,15 +352,24 @@ console.log(oneCap("snopp"));*/
  */
 
 /*function verifyDrinkingAge(age){
-  if(age >=21){
+  if(age >= 21){
     return true;
   }else{
     return false;
   }
 }
 
-var canDrink = verifyDrinkingAge(20);
+var canDrink = verifyDrinkingAge(21);
 console.log(canDrink);*/
+
+/*function verifyDrinkingAge(age){
+  return age >=21;
+}
+
+var canDrink = verifyDrinkingAge(20);
+console.log(canDrink);
+*/
+
 
 /**
  * #18
@@ -349,16 +377,18 @@ console.log(canDrink);*/
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
+
+
 /*function throwParty(){
   if(canDrink === true){
-    return "Chee Hoo!";
+    return "Cheee Hoo! We going to da party!";
   }else{
-    return "Meh, see you at Starbucks";
+    return "Meh, see you at Starbucks.";
   }
 }
+
 var canParty = throwParty();
-console.log(canParty);
-*/
+console.log(canParty);*/
 
 
 
